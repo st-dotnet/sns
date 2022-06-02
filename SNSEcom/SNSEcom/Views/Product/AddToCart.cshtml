@@ -1,0 +1,33 @@
+﻿@model IEnumerable<SNSEcom.Domain.Cart>
+
+@{
+    ViewData["Title"] = "AddToCart";
+}
+
+<h1>AddToCart</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
