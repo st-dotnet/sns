@@ -1,0 +1,8 @@
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.csproj.AssemblyReference.cache
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.GeneratedMSBuildEditorConfig.editorconfig
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.AssemblyInfoInputs.cache
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.AssemblyInfo.cs
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.csproj.CoreCompileInputs.cache
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.MvcApplicationPartsAssemblyInfo.cache
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.RazorAssemblyInfo.cache
+C:\SNS\sns\SNSEcom\SNSEcom\obj\Debug\net5.0\SNSEcom.RazorAssemblyInfo.cs
