@@ -1,0 +1,93 @@
+﻿@model IEnumerable<SNSEcom.Domain.Products>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*<p>
+        <a asp-action="Create">Create New</a>
+
+    </p>*@
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add New Product</button>
+<br />
+<br />
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            @using (Html.BeginForm("Create", "Product", FormMethod.Post))
+            {
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Add Product</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="EmployeeId">Description</label>
+                            <input type="text" class="form-control" id="Description" name="Description" placeholder="Description" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Name">SKU</label>
+                            <input type="text" class="form-control" id="SKU" placeholder="SKU" name="SKU" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Age">Quantity</label>
+                            <input type="text" class="form-control" id="Quantity" placeholder="Quantity" name="Quantity" />
+                        </div>
+                        <div class="form-group">
+                            <label for="State">Price</label>
+                            <input type="text" class="form-control" id="Price" placeholder="Price" name="Price" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+            }
+            </div>
+    </div>
+</div>
+<table class="table ttable-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SKU)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SKU)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a> |
+                    <a asp-action="CartItem" asp-route-id="@item.ProductId">AddToCart</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
