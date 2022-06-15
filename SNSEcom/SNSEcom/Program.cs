@@ -13,6 +13,7 @@ namespace SNSEcom
     {
         public static void Main(string[] args)
         {
+            ///////add commment to the program file 
             CreateHostBuilder(args).Build().Run();
         }
 

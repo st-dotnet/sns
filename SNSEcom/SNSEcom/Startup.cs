@@ -24,7 +24,7 @@ namespace SNSEcom
             services.AddScoped<IUploadService, UploadService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICartService, CartService>();
-            //////dffdf
+            ////// add commit code for thee startup class
             services.AddRazorPages();
             services.AddDbContext<SNSContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
